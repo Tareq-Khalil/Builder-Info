@@ -20,7 +20,7 @@ body{
     min-height:100vh;
     background:var(--bg);
     color:var(--text);
-    font-family:"Space Grotesck", sans-serif;
+    font-family:"Space Grotesk", sans-serif;
     overflow-x:hidden;
 }
 a{
@@ -259,6 +259,39 @@ h3{
     font-size:13px;
     margin-top:8px;
 }
+.beyond-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    border:1px solid var(--line);
+}
+.beyond-card{
+    min-height:260px;
+    padding:32px;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    transition:background .25s, transform .25s;
+}
+.beyond-card:nth-child(2n){
+    border-right:none;
+}
+.beyond-card:nth-child(3), .beyond-card:nth-child(4){
+    border-bottom:none;
+}
+.beyond-card:hover{
+    background:rgba(255,255,255,0.15);
+}
+.beyond-card>span{
+    color:#555861;
+    font-family:"DM Mono",monospace;
+    font-size:11px;
+}
+.beyond-card p{
+    max-width:430px;
+    margin-top:10px;
+    color:var(--muted);
+    line-height:1.65;
+    font-size:14px;
+}
 .contact{
     padding:160px 0;
     border-top:1px solid var(--line);
@@ -326,6 +359,23 @@ footer{
     }
     .building-card h3{
         margin-top:50px;
+    }
+    .beyond-grid{
+        grid-template-columns:1fr;
+    }
+    .beyond-card{
+        min-height:210px;
+        border-right:none;
+        border-bottom:1px solid var(--line);
+    }
+    .beyond-card:nth-child(3){
+        border-bottom:1px solid var(--line);
+    }
+    .beyond-card:last-child{
+        border-bottom:none;
+    }
+    .beyond-card h3{
+        margin:45px;
     }
     .contact{
         padding:110px 0;
