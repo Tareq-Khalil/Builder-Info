@@ -4,7 +4,7 @@ A personal page created for my restoration builder trial
 
 ## Live site
 
-https://tareq-khalil.github.io/builder-info/
+https://tareq-khalil.github.io/Builder-Info/
 
 ## Built with
 
